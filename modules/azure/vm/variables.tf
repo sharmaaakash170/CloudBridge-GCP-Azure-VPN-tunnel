@@ -1,0 +1,14 @@
+variable "env" {}
+variable "rg_name" {}
+variable "location" {}
+variable "network_interface_ids" {}
+variable "publisher" {}
+variable "offer" {}
+variable "sku" {}
+variable "caching" {}
+variable "create_option" {}
+variable "managed_disk_type" {}
+variable "computer_name" {}
+variable "admin_username" {}
+variable "vm_size" {}
+variable "ssh_public_key_path" {}

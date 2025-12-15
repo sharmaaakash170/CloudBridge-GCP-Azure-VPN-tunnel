@@ -1,0 +1,9 @@
+variable "env" {}
+variable "machine_type" {}
+variable "zone" {}
+variable "image" {}
+variable "interface" {}
+variable "network" {}
+variable "subnetwork" {}
+variable "admin_username" {}
+variable "ssh_public_key_path" {}

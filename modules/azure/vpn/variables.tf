@@ -1,0 +1,9 @@
+variable "location" {}
+variable "rg_name" {}
+variable "gateway_subnet_id" {}
+variable "gcp_vpn_ip" {}
+variable "gcp_vpc_cidr" {}
+variable "shared_secret" {}
+variable "azure_bgp_asn" {}
+variable "gcp_bgp_asn" {}
+variable "gcp_bgp_ip" {}
