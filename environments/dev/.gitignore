@@ -1,0 +1,33 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars       # contains secrets like passwords, keys
+.terraform/
+crash.log
+override.tf
+override.tf.json
+.terraform.lock.hcl
+*_override.tf
+*_override.tf.json
+.terraform/    # Terraform plugin cache and modules
+
+# Sensitive files
+*.pem
+*.key
+*.pub
+
+# IDEs / Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# GitHub Actions artifacts (optional)
+.github/workflows/terraform-*.yml
