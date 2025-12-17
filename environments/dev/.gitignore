@@ -10,7 +10,7 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 .terraform/    # Terraform plugin cache and modules
-
+.terraform.tfstate.lock.info
 # Sensitive files
 *.pem
 *.key
