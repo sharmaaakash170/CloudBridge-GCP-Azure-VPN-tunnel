@@ -202,15 +202,6 @@ GatewaySubnet (the selected subnet is not supported)
 
 ---
 
-## 🚧 Future Improvements
-
-- GitHub Actions CI
-- Ansible configuration
-- Private‑only VMs
-- Monitoring (BGP + Tunnel health)
-
----
-
 ## 🙌 Final Note
 
 This project reflects **real DevOps debugging**, not just happy‑path Terraform.
