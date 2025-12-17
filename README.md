@@ -131,7 +131,7 @@ az network vnet-gateway list-bgp-peer-status --resource-group vpn-rg --name azur
 
 ---
 
-### ❌ Issue 4: VM subnet deletion failed during `terraform destroy`
+### ❌ Issue 2: VM subnet deletion failed during `terraform destroy`
 **Error**
 ```
 InUseSubnetCannotBeDeleted
@@ -146,7 +146,7 @@ NIC still attached to VM
 
 ---
 
-### ❌ Issue 5: GCP VPC not deleting
+### ❌ Issue 3: GCP VPC not deleting
 **Error**
 ```
 network is already being used by firewall
@@ -160,7 +160,7 @@ depends_on = [google_compute_firewall.allow_http]
 
 ---
 
-### ❌ Issue 6: GatewaySubnet selected for VM
+### ❌ Issue 4: GatewaySubnet selected for VM
 **Error**
 ```
 GatewaySubnet (the selected subnet is not supported)
@@ -172,7 +172,7 @@ GatewaySubnet (the selected subnet is not supported)
 
 ---
 
-### ❌ Issue 7: Curl / Ping failed even when VPN was UP
+### ❌ Issue 5: Curl / Ping failed even when VPN was UP
 **Reason**
 - NSG / Firewall missing
 - Service not running on VM
