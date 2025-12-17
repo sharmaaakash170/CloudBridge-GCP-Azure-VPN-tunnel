@@ -1,5 +1,5 @@
 
-# CloudBridge 🌉  
+# CloudBridge-GCP-Azure-VPN-tunnel 🌉  
 **Azure ↔ GCP Site-to-Site VPN (Active‑Active, BGP) with Terraform**
 
 This repository documents my **end‑to‑end, real‑world troubleshooting journey** of building a **production‑style Site‑to‑Site VPN** between **Microsoft Azure** and **Google Cloud Platform (GCP)** using **Terraform**, including **Active‑Active VPN gateways, BGP, and HA tunnels**.
@@ -131,39 +131,6 @@ az network vnet-gateway list-bgp-peer-status --resource-group vpn-rg --name azur
 
 ---
 
-### ❌ Issue 2: Terraform output changed from string → list
-**Error**
-```
-Invalid index: var.gcp_vpn_ip[0][0]
-```
-
-**Reason**
-Terraform output type mismatch
-
-✅ **Fix**
-- Standardized outputs as `list(string)`
-- Accessed as:
-```hcl
-gateway_address = var.gcp_vpn_ip[0]
-```
-
----
-
-### ❌ Issue 3: Unsupported argument `ip_configuration_name`
-**Error**
-```
-An argument named "ip_configuration_name" is not expected here
-```
-
-**Reason**
-Terraform **does not allow** binding connections to IP configs explicitly
-
-✅ **Fix**
-- Removed `ip_configuration_name`
-- Azure auto‑binds connections in Active‑Active mode
-
----
-
 ### ❌ Issue 4: VM subnet deletion failed during `terraform destroy`
 **Error**
 ```
@@ -253,4 +220,4 @@ If you understand this repo, you understand **multi‑cloud networking deeply**.
 ---
 
 **Author:** Aakash Sharma  
-**Project:** CloudBridge 🌉
+**Project:** CloudBridge-GCP-Azure-VPN-tunnel 🌉
